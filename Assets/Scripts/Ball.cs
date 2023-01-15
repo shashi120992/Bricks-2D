@@ -3,8 +3,8 @@
 [RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
 {
-    public new Rigidbody2D rigidbody { get; private set; }
-    public float speed = 500f;
+   public new Rigidbody2D rigidbody { get; private set; }
+   private float speed = 500f;
 
     private void Awake()
     {

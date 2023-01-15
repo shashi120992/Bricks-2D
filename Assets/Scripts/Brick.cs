@@ -6,6 +6,8 @@ public class Brick : MonoBehaviour
     public SpriteRenderer spriteRenderer { get; private set; }
     public Sprite[] states = new Sprite[0];
     public int health { get; private set; }
+    //[SerializeField] int points = 100;
+    //[SerializeField] bool unbreakable;
     public int points = 100;
     public bool unbreakable;
 
@@ -43,8 +45,9 @@ public class Brick : MonoBehaviour
         } else {
             this.spriteRenderer.sprite = this.states[this.health - 1];
         }
+        GetComponent<GameManager>().Hit(this);
 
-        FindObjectOfType<GameManager>().Hit(this);
+        //FindObjectOfType<GameManager>().Hit(this);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

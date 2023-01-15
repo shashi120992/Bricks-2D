@@ -50,9 +50,13 @@ public class GameManager : MonoBehaviour
 
     private void OnLevelLoaded(Scene scene, LoadSceneMode mode)
     {
-        this.ball = FindObjectOfType<Ball>();
-        this.paddle = FindObjectOfType<Paddle>();
-        this.bricks = FindObjectsOfType<Brick>();
+        this.ball = GetComponent<Ball>();
+        this.paddle= GetComponent<Paddle>();
+        this.bricks = GetComponent<Brick[]>();
+
+        //this.ball = FindObjectOfType<Ball>();
+        //this.paddle = FindObjectOfType<Paddle>();
+        //this.bricks = FindObjectsOfType<Brick>();
     }
 
     public void Miss()

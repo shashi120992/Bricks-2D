@@ -5,8 +5,10 @@ public class Paddle : MonoBehaviour
 {
     public new Rigidbody2D rigidbody { get; private set; }
     public Vector2 direction { get; private set; }
-    public float speed = 30f;
-    public float maxBounceAngle = 75f;
+    [SerializeField] private float speed = 30f;
+    [SerializeField] private float maxBounceAngle = 75f;
+    //public float speed = 30f;
+    //public float maxBounceAngle = 75f;
 
     private void Awake()
     {

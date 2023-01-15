@@ -57,15 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Paddle.cs" />
-    <Compile Include="Assets\Scripts\Brick.cs" />
-    <Compile Include="Assets\Scripts\Ball.cs" />
-    <Compile Include="Assets\Scripts\ResetZone.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\MonoSingleton\MonoSIngleton.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Bricks.cs" />
-    <Compile Include="Assets\Scripts\ScriptableObjects\BrickPoint.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\MonoSingleton\MonoSIngleton.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ResetZone.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Brick.cs" />
+    <Compile Include="Assets\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\BrickPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
